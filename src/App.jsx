@@ -6,7 +6,7 @@ import { hero, navlinks, memory, placesAPI, brands, pricingapi, bannerAPI, foote
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar navlinks={navlinks} />
       <Hero hero={hero}/>
       <Footer />
     </>
