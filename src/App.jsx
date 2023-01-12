@@ -1,8 +1,15 @@
 import React from 'react'
+import {Navbar,Hero,Footer} from './components'
+import { hero, navlinks, memory, placesAPI, brands, pricingapi, bannerAPI, footerAPI } from './data/travelerData';
+
 
 function App() {
   return (
-    <div className='text-2xl text-red-500'>App</div>
+    <>
+      <Navbar />
+      <Hero hero={hero}/>
+      <Footer />
+    </>
   )
 }
 
