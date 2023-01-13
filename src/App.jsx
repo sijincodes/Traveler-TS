@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar,Hero,Footer} from './components'
+import {Navbar,Hero,Footer, Memory} from './components'
 import { hero, navlinks, memory, placesAPI, brands, pricingapi, bannerAPI, footerAPI } from './data/travelerData';
 
 
@@ -8,6 +8,7 @@ function App() {
     <>
       <Navbar navlinks={navlinks} />
       <Hero hero={hero}/>
+      <Memory memory={memory} />
       <Footer />
     </>
   )

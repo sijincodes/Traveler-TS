@@ -58,7 +58,7 @@ export const hero = {
 export const memory = {
   "title": "Sweet Memories",
   "subtitle": "Come To Life Again",
-  "text": "What we have always taken care for 10 years is always prioritizing the comfort of our users. So, do not our quality.",
+  "text": "We have always prioritized the comfort of our users, for the last 10 years.",
   "img": memoryimg,
   "experience": [
     { "number": "10", "title": "Year Experience" },
