@@ -6,6 +6,7 @@ import brand2 from "../images/brand2.png";
 import brand3 from "../images/brand3.png";
 import brand4 from "../images/brand4.png";
 import brand5 from "../images/brand5.png";
+import b5 from "../images/b5.png"
 
 import place1 from "../images/img1.webp";
 import place2 from "../images/img2.webp";
@@ -35,7 +36,7 @@ export const brands = [
   { iconSrc: brand2 },
   { iconSrc: brand3 },
   { iconSrc: brand4 },
-  { iconSrc: brand5 },
+  { iconSrc: b5 },
 ];
 
 export const navlinks = [
