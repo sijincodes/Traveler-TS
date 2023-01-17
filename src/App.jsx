@@ -1,21 +1,43 @@
-import React from 'react'
-import {Navbar,Hero,Footer, Memory, Explore,Advertisement, Pricing, Banner} from './components'
-import { hero, navlinks, memory, placesAPI, brands, pricingapi, bannerAPI, footerAPI } from './data/travelerData';
-
+import React from "react";
+import {
+  Navbar,
+  Hero,
+  Footer,
+  Memory,
+  Explore,
+  Advertisement,
+  Pricing,
+  Banner,
+  Newsletter,
+} from "./components";
+import {
+  hero,
+  navlinks,
+  memory,
+  placesAPI,
+  brands,
+  pricingapi,
+  bannerAPI,
+  footerAPI,
+} from "./data/travelerData";
 
 function App() {
   return (
     <>
       <Navbar navlinks={navlinks} />
-      <Hero hero={hero}/>
+      <Hero hero={hero} />
       <Memory memory={memory} />
-      <Explore title={'Explore the beautiful places of the World'}placesAPI={placesAPI}/>
+      <Explore
+        title={"Explore the beautiful places of the World"}
+        placesAPI={placesAPI}
+      />
       <Advertisement brands={brands} />
       <Pricing pricingapi={pricingapi} />
-      <Banner bannerAPI={bannerAPI}/>
+      <Banner bannerAPI={bannerAPI} />
+      <Newsletter />
       <Footer footerAPI={footerAPI} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
