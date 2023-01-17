@@ -13,7 +13,7 @@ function App() {
       <Advertisement brands={brands} />
       <Pricing pricingapi={pricingapi} />
       <Banner bannerAPI={bannerAPI}/>
-      <Footer />
+      <Footer footerAPI={footerAPI} />
     </>
   )
 }
