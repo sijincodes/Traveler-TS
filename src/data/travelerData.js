@@ -69,16 +69,16 @@ export const memory = {
 };
 
 export const placesAPI = [
-  { "placeImg": place1, "location": "Lahore", "distance": "3.0 hour dirve" },
-  { "placeImg": place2, "location": "Faisalabad", "distance": "2.5 hour dirve" },
-  { "placeImg": place3, "location": "Multan", "distance": "4.7 hour drive" },
-  { "placeImg": place4, "location": "Rawalpindi", "distance": "4 hour drive" },
-  { "placeImg": place5, "location": "Islamabad", "distance": "4.9 hour drive" },
-  { "placeImg": place6, "location": "Muree", "distance": "4.5 hour drive" },
-  { "placeImg": place7, "location": "Nathia Gali", "distance": "5.5 hour drive" },
-  { "placeImg": place8, "location": "Ayubia Gali", "distance": "5.1 hour drive" },
-  { "placeImg": place9, "location": "Bhurban", "distance": "5.1 hour drive" },
-  { "placeImg": place10, "location": "Gilgit", "distance": "5.1 hour drive" },
+  { "placeImg": place1, "location": "Bern", "distance": "3.0 hour dirve" },
+  { "placeImg": place2, "location": "London", "distance": "2.5 hour dirve" },
+  { "placeImg": place3, "location": "Munich", "distance": "4.7 hour drive" },
+  { "placeImg": place4, "location": "Brugges", "distance": "4 hour drive" },
+  { "placeImg": place5, "location": "Barcelona", "distance": "6.9 hour drive" },
+  { "placeImg": place6, "location": "Bali", "distance": "4.5 hour flight" },
+  { "placeImg": place7, "location": "Zurich", "distance": "5.5 hour drive" },
+  { "placeImg": place8, "location": "Berlin", "distance": "5.1 hour drive" },
+  { "placeImg": place9, "location": "Garmisch", "distance": "5.1 hour drive" },
+  { "placeImg": place10, "location": "Dolomites", "distance": "5.1 hour drive" },
 ];
 
 export const pricingapi = {
