@@ -25,6 +25,7 @@ function PopupMenu({navlinks, popupState}:PopupMenuProp) {
               <button className="button-light sm:w-auto shadow-slate-300 rounded-lg" type="button">
                 Join Us
               </button>
+            
             </li>
             </ul>
         </nav>
