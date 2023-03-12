@@ -12,55 +12,67 @@ export type HeroB = {
   img: any;
 };
 
+export type Title = {
+  title:string;
+}
+
+export type Link={
+  link:string;
+}
+
+export type Icon={
+  icon: any;
+}
+
 export type FooterDetail = {
-  titles: {
-    title: string;
-  }[];
-  links: {
-    link: string;
-  }[][];
-  sociallinks: {
-    icon: any;
-  }[];
+  titles: Title[];
+  links: Link[][];
+  sociallinks: Icon[];
 };
+
+export type Experience = {
+  number:string;
+  title: string;
+}
 
 export type MemoryDetail = {
   title: string;
   subtitle: string;
   text: string;
   img: any;
-  experience: {
-    number: string;
-    title: string;
-  }[];
+  experience: Experience[];
 };
 
 export type PlaceApiDetail = {
   placeImg: any;
   location: string;
   distance: string;
-}[];
+};
 
 export type BrandDetail = {
     iconSrc: any;
-}[];
+};
+
+export type Plancontent= {
+  iconbox: any;
+  text: string;
+};
+
+export type Plans= {
+  planicon: any;
+  title: string;
+  text: string;
+  plantype: string;
+  plancontent: Plancontent[]
+  buttonText: string;
+};
 
 export type PricingDetail =  {
     title: string;
     text: string;
     btn1: string;
     btn2: string;
-    plans: {
-        planicon: any;
-        title: string;
-        text: string;
-        plantype: string;
-        plancontent: {
-            iconbox: any;
-            text: string;
-        }[];
-        buttonText: string;
-    }[];
+    plans: Plans[];
 }
 
 export type PlanDetail = {
@@ -68,10 +80,7 @@ export type PlanDetail = {
     title: string;
     text: string;
     plantype: string;
-    plancontent: {
-        iconbox: any;
-        text: string;
-    }[];
+    plancontent: Plancontent[];
     buttonText: string;
 }
 

@@ -1,14 +1,16 @@
 import React from "react";
 import { BrandDetail } from "../types/types";
 
-type AdProps ={
-  brands : BrandDetail
-}
+type AdProps = {
+  brands: BrandDetail[];
+};
 
-function Advertisement({ brands }:AdProps) {
+function Advertisement({ brands }: AdProps) {
   return (
-    <div className="my-16 lg:my-7 w-9/12 lg:w-[85vw] m-auto flex items-center justify-between xl:gap-7 overflow-x-scroll scroll-smooth
-    scroll-hidden">
+    <div
+      className="my-16 lg:my-7 w-9/12 lg:w-[85vw] m-auto flex items-center justify-between xl:gap-7 overflow-x-scroll scroll-smooth
+    scroll-hidden"
+    >
       {brands?.map((elm, index) => (
         <img
           key={index}
