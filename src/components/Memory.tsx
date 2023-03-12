@@ -1,6 +1,11 @@
 import React from 'react'
+import { MemoryDetail } from '../types/types'
 
-function Memory({memory}) {
+type MemoryProps = {
+    memory : MemoryDetail
+}
+
+function Memory({memory}:MemoryProps) {
   return (
   <>
     <div className='relative my-16 md:mb-7'>

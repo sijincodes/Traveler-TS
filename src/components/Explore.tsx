@@ -1,6 +1,12 @@
 import React from "react";
+import { PlaceApiDetail } from "../types/types";
 
-function Explore({ title, placesAPI }) {
+type ExploreProps = {
+title :string,
+placesAPI : PlaceApiDetail
+}
+
+function Explore({ title, placesAPI }:ExploreProps) {
   return (
     <>
       <div className="relative my-7 md:mt-3">
