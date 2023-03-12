@@ -1,6 +1,11 @@
 import React from "react";
+import { FooterDetail } from "../types/types";
 
-function Footer({ footerAPI }) {
+type FooterProps = {
+  footerAPI: FooterDetail
+}
+
+function Footer({ footerAPI }:FooterProps) {
   return (
     <>
       <footer className="bg-gradient-to-b from-emerald-400 to-green-300 pt-24 pb-7 ">

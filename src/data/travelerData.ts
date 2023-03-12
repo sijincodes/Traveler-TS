@@ -30,6 +30,7 @@ import twitter from '../images/twitter.svg';
 import youtube from '../images/youtube.svg';
 
 import banner from '../images/banner.webp';
+import { HeroB, Navlinks} from "../types/types";
 
 export const brands = [
   { iconSrc: brand1 },
@@ -39,7 +40,7 @@ export const brands = [
   { iconSrc: b5 },
 ];
 
-export const navlinks = [
+export const navlinks: Navlinks[] = [
   { link: "Home", id: "home" },
   { link: "About", id: "about" },
   { link: "Explore", id: "explore" },
@@ -47,7 +48,7 @@ export const navlinks = [
   { link: "Contact", id: "contact" },
 ];
 
-export const hero = {
+export const hero : HeroB = {
   "title": "Its a Big World Out There,",
   "subtitle": "Go Explore",
   "text": "We provide you always your dream places. We always make our customer happy by proving many choices.",

@@ -1,15 +1,22 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+
+import { Navlinks } from "../types/types";
 
 import logo from "../images/logo.png";
 import menu from "../images/menu.svg";
 import PopupMenu from "./PopupMenu";
 
-function Navbar({ navlinks }) {
-  const [popupState, setPopupState] = useState(false)
-  const onTriggerPopup = () =>{
-    setPopupState(!popupState)
-  }
+
+type NavbarProps = {
+  navlinks: Navlinks[];
+}
+
+function Navbar({ navlinks }: NavbarProps) {
+  const [popupState, setPopupState] = useState(false);
+  const onTriggerPopup = () => {
+    setPopupState(!popupState);
+  };
   return (
     <>
       <header className="flex items-center justify-center w-auto h-auto absolute top-7 left-0 right-0">
@@ -38,7 +45,7 @@ function Navbar({ navlinks }) {
               <button
                 type="button"
                 className="flex items-center justify-center transition-all duration-200 active:scale-90 cursor-pointer"
-                 onClick={onTriggerPopup}
+                onClick={onTriggerPopup}
               >
                 <img
                   className="object-cover shadown-sm filter"

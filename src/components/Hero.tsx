@@ -1,6 +1,12 @@
 import React from 'react'
+import { HeroB } from '../types/types'
 
-function Hero({hero}) {
+type HeroProps =  {
+  hero : HeroB
+}
+
+
+function Hero({hero}:HeroProps) {
   return (
     <div className='flex flex-col bg-gradient-to-b from-emerald-200 to white h-auto w-auto'>
       <div className='traveler-container grid items-start justify-items-center'>
