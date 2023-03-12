@@ -7,10 +7,9 @@ import logo from "../images/logo.png";
 import menu from "../images/menu.svg";
 import PopupMenu from "./PopupMenu";
 
-
 type NavbarProps = {
   navlinks: Navlinks[];
-}
+};
 
 function Navbar({ navlinks }: NavbarProps) {
   const [popupState, setPopupState] = useState(false);

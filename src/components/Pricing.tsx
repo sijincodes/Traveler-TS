@@ -1,7 +1,12 @@
 import React from 'react'
+import { PricingDetail } from '../types/types'
 import PriceCard from './PriceCard'
 
-function Pricing({pricingapi}) {
+type PricingProp = {
+  pricingapi : PricingDetail
+}
+
+function Pricing({pricingapi}:PricingProp) {
   return (
     <>
       <div className='my-16 relative'>

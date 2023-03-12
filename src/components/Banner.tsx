@@ -1,6 +1,11 @@
 import React from 'react'
+import { BannerDetail } from '../types/types'
 
-function Banner({bannerAPI}) {
+type BannerProp = {
+  bannerAPI : BannerDetail
+}
+
+function Banner({bannerAPI}:BannerProp) {
   return (
     <>
     <div className='relative w-full max-w-5xl mx-auto my-0 xl:w-[95vw] rounded-lg'>

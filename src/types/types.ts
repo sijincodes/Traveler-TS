@@ -43,4 +43,41 @@ export type PlaceApiDetail = {
 
 export type BrandDetail = {
     iconSrc: any;
-}[]
+}[];
+
+export type PricingDetail =  {
+    title: string;
+    text: string;
+    btn1: string;
+    btn2: string;
+    plans: {
+        planicon: any;
+        title: string;
+        text: string;
+        plantype: string;
+        plancontent: {
+            iconbox: any;
+            text: string;
+        }[];
+        buttonText: string;
+    }[];
+}
+
+export type PlanDetail = {
+    planicon: any;
+    title: string;
+    text: string;
+    plantype: string;
+    plancontent: {
+        iconbox: any;
+        text: string;
+    }[];
+    buttonText: string;
+}
+
+export type BannerDetail =  {
+    title: string;
+    text: string;
+    imgSrc: any;
+    btnText: string;
+}

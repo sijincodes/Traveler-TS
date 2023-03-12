@@ -1,7 +1,14 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
+import { Navlinks } from '../types/types';
 
-function PopupMenu({navlinks, popupState}) {
+type PopupMenuProp = {
+  navlinks : Navlinks [];
+  popupState:boolean
+}
+
+
+function PopupMenu({navlinks, popupState}:PopupMenuProp) {
   return (
     <>
         <nav className={`fixed top-14 right-14 bg-white bg-opacity-70 opacity-100

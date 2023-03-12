@@ -1,6 +1,11 @@
 import React from 'react'
+import { PlanDetail } from '../types/types'
 
-function PriceCard({plan}) {
+type PriceCardProps = {
+plan : PlanDetail
+}
+
+function PriceCard({plan}: PriceCardProps) {
   return (
     <>
         <div className='p-5 rounded-lg bg-slate-50/5 ring-1 ring-slate-100 shadow-md shadow-slate-200'>
