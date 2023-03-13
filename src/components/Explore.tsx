@@ -6,6 +6,11 @@ type ExploreProps = {
   placesAPI: PlaceApiDetail[];
 };
 
+export type ExploreTestProps = {
+  title: string;
+  placesAPI: PlaceApiDetail[];
+};
+
 function Explore({ title, placesAPI }: ExploreProps) {
   return (
     <>

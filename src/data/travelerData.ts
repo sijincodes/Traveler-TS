@@ -30,9 +30,9 @@ import twitter from '../images/twitter.svg';
 import youtube from '../images/youtube.svg';
 
 import banner from '../images/banner.webp';
-import { HeroB, Navlinks} from "../types/types";
+import { BrandDetail, HeroB, Navlinks} from "../types/types";
 
-export const brands = [
+export const brands:BrandDetail[] = [
   { iconSrc: brand1 },
   { iconSrc: brand2 },
   { iconSrc: brand3 },
@@ -77,9 +77,9 @@ export const placesAPI = [
   { "placeImg": place5, "location": "Barcelona", "distance": "6.9 hour drive" },
   { "placeImg": place6, "location": "Bali", "distance": "4.5 hour flight" },
   { "placeImg": place7, "location": "Zurich", "distance": "5.5 hour drive" },
-  { "placeImg": place8, "location": "Berlin", "distance": "5.1 hour drive" },
+  { "placeImg": place8, "location": "Berlin", "distance": "5.2 hour drive" },
   { "placeImg": place9, "location": "Garmisch", "distance": "5.1 hour drive" },
-  { "placeImg": place10, "location": "Dolomites", "distance": "5.1 hour drive" },
+  { "placeImg": place10, "location": "Dolomites", "distance": "5.3 hour drive" },
 ];
 
 export const pricingapi = {

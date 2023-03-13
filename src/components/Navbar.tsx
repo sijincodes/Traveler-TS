@@ -11,6 +11,10 @@ type NavbarProps = {
   navlinks: Navlinks[];
 };
 
+export type NavbarTestProps = {
+  navlinks: Navlinks[];
+};
+
 function Navbar({ navlinks }: NavbarProps) {
   const [popupState, setPopupState] = useState(false);
   const onTriggerPopup = () => {

@@ -5,14 +5,20 @@ type AdProps = {
   brands: BrandDetail[];
 };
 
+export type AdTestProps = {
+  brands?: BrandDetail[];
+};
+
 function Advertisement({ brands }: AdProps) {
   return (
     <div
+      data-testId="advertisementSection"
       className="my-16 lg:my-7 w-9/12 lg:w-[85vw] m-auto flex items-center justify-between xl:gap-7 overflow-x-scroll scroll-smooth
     scroll-hidden"
     >
       {brands?.map((elm, index) => (
         <img
+          role="img"
           key={index}
           src={elm.iconSrc}
           alt="brands-img"

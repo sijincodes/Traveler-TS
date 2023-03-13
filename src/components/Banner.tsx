@@ -1,8 +1,12 @@
 import React from 'react'
 import { BannerDetail } from '../types/types'
 
-type BannerProp = {
+ type BannerProp = {
   bannerAPI : BannerDetail
+}
+
+export type BannerTestProp = {
+  bannerAPI ?: BannerDetail
 }
 
 function Banner({bannerAPI}:BannerProp) {
