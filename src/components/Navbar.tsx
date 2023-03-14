@@ -29,8 +29,8 @@ function Navbar({ navlinks }: NavbarProps) {
           </NavLink>
           <ul className="flex items-center lg:hidden gap-7">
             {navlinks?.map((elm, index) => (
-              <li key={index}>
-                <NavLink className="text-lg text-slate-900" to={`#`}>
+              <li key={index} >
+                <NavLink className="text-lg text-slate-900" to={`#`} data-testid={elm.id}>
                   {elm.link}
                 </NavLink>
               </li>

@@ -6,6 +6,10 @@ type PricingProp = {
   pricingapi: PricingDetail;
 };
 
+export type PricingTestProp = {
+  pricingapi: PricingDetail;
+};
+
 function Pricing({ pricingapi }: PricingProp) {
   return (
     <>

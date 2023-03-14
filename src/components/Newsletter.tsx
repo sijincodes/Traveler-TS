@@ -18,6 +18,7 @@ function Newsletter() {
           </div>
           <form className="flex items-center justify-center relative">
             <input
+            role='email'
               type="email"
               placeholder="Email Address"
               name="email"

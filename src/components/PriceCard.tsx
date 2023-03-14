@@ -12,7 +12,7 @@ function PriceCard({plan}: PriceCardProps) {
             <div className='flex items-center justify-between'>
                 <div className='flex items-center gap-5'>
                     <div className='grid items-center'>
-                        <img src={plan.planicon} alt='plan-icon' className='w-14 h-14 lg:h-12 lg:w-12 object-cover' />
+                        <img src={plan.planicon} alt='plan-icon' className='w-14 h-14 lg:h-12 lg:w-12 object-cover' data-testid={plan.planicon} />
                     </div>
                     <div className='grid items-center'>
                         <h1 className='text-grey-900 font-semibold text-lg filter drop-shadow-lg lg:text-base md:text-sm'>{plan.title}</h1>
