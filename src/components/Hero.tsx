@@ -6,7 +6,7 @@ type HeroProps = {
 };
 
 export type HeroTestProps = {
-  hero: HeroB;
+  hero ?: HeroB;
 };
 
 function Hero({ hero }: HeroProps) {

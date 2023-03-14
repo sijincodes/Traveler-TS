@@ -8,7 +8,7 @@ type ExploreProps = {
 
 export type ExploreTestProps = {
   title: string;
-  placesAPI: PlaceApiDetail[];
+  placesAPI ?: PlaceApiDetail[];
 };
 
 function Explore({ title, placesAPI }: ExploreProps) {

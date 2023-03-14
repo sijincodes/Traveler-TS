@@ -6,7 +6,7 @@ type MemoryProps = {
 };
 
 export type MemoryTestProps = {
-    memory: MemoryDetail;
+    memory ?: MemoryDetail;
   };
   
 

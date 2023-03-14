@@ -6,7 +6,7 @@ type FooterProps = {
 };
 
 export type FooterTestProps = {
-  footerAPI: FooterDetail;
+  footerAPI ?: FooterDetail;
 };
 
 function Footer({ footerAPI }: FooterProps) {

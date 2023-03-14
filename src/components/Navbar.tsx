@@ -12,7 +12,7 @@ type NavbarProps = {
 };
 
 export type NavbarTestProps = {
-  navlinks: Navlinks[];
+  navlinks ?: Navlinks[];
 };
 
 function Navbar({ navlinks }: NavbarProps) {

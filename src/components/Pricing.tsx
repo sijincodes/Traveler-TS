@@ -2,11 +2,7 @@ import React from "react";
 import { PricingDetail } from "../types/types";
 import PriceCard from "./PriceCard";
 
-type PricingProp = {
-  pricingapi: PricingDetail;
-};
-
-export type PricingTestProp = {
+export type PricingProp = {
   pricingapi: PricingDetail;
 };
 
