@@ -12,11 +12,15 @@ const setup = (props?: AdTestProps) => {
 };
 
 describe("Advertisement Component", () => {
-  test("Advertisement Component Rendered", () => {
+  beforeEach(() => {
     setup();
-
-    expect(screen.getByTestId("advertisementSection")).toBeInTheDocument();
-    const displayedImage = document.querySelector("img") as HTMLImageElement;
-    expect(displayedImage.src).toContain("Face-smile");
   });
+
+  test.each(brands)(
+    "Verify the brand images are rendered in Advertisement component",
+    (brand) => {
+      const logo = screen.getByTestId(brand.iconSrc);
+      expect(logo).toHaveAttribute("src", brand.iconSrc);
+    }
+  );
 });
